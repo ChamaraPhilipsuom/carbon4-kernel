@@ -21,6 +21,7 @@ import org.wso2.carbon.registry.core.dataaccess.TransactionManager;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
 import java.io.Reader;
+import java.io.Serializable;
 import java.io.Writer;
 import java.util.Date;
 import java.util.Map;
@@ -31,7 +32,7 @@ import java.util.Map;
  */
  public interface Registry extends org.wso2.carbon.registry.core.CoreRegistry,
                                   org.wso2.carbon.registry.api.Registry,
-                                  TransactionManager {
+                                  TransactionManager, Serializable {
 
     /**
      * Returns the meta data of the resource at a given path.

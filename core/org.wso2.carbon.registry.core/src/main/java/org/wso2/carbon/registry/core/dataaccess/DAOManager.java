@@ -20,11 +20,13 @@ package org.wso2.carbon.registry.core.dataaccess;
 
 import org.wso2.carbon.registry.core.dao.*;
 
+import java.io.Serializable;
+
 /**
  * This describes a an instance of a data access object manager class that can be used to obtain
  * access to the object representations of various data stored on the back-end database.
  */
-public interface DAOManager {
+public interface DAOManager extends Serializable{
 
     /**
      * Method to obtain an instance of an association data access object.

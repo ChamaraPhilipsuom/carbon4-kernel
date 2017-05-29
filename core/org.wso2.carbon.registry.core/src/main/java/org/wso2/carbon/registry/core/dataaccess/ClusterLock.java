@@ -20,10 +20,12 @@ package org.wso2.carbon.registry.core.dataaccess;
 
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
+
 /**
  * A lock implementation to avoid database schema creation and data population from multiple nodes.
  */
-public interface ClusterLock {
+public interface ClusterLock extends Serializable{
 
     /**
      * Initializes the Node Group Lock Object. This method is responsible of initializing the

@@ -20,11 +20,13 @@ package org.wso2.carbon.registry.core.dataaccess;
 
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
+
 /**
  * This describes a an instance of the manager class that can be used to obtain access to the
  * back-end database.
  */
-public interface DataAccessManager {
+public interface DataAccessManager extends Serializable {
 
     /**
      * Method to obtain an instance of the cluster lock.

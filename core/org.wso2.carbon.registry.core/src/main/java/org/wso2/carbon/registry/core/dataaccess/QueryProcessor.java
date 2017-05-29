@@ -21,6 +21,7 @@ import org.wso2.carbon.registry.core.Registry;
 import org.wso2.carbon.registry.core.Resource;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -30,7 +31,7 @@ import java.util.Map;
  * query should be taken over by the query processor implementation. This processing steps include
  * interpreting of given query parameters, constructing the resulting resource object, etc.
  */
-public interface QueryProcessor {
+public interface QueryProcessor extends Serializable{
 
 
     /**

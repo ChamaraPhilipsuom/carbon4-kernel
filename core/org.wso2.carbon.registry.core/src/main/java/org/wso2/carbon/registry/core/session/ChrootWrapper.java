@@ -31,6 +31,7 @@ import org.wso2.carbon.registry.core.ResourceImpl;
 import org.wso2.carbon.registry.core.TaggedResourcePath;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +39,7 @@ import java.util.List;
  * Class providing the chroot related functionality. The instance of this is used by the
  * UserRegistry to wrap all the operation for inputs and outputs with chroot
  */
-public class ChrootWrapper {
+public class ChrootWrapper implements Serializable {
 
     private static final Log log = LogFactory.getLog(UserRegistry.class);
 

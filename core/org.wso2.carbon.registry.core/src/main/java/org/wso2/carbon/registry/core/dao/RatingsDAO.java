@@ -21,10 +21,12 @@ import org.wso2.carbon.registry.core.ResourceImpl;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.jdbc.dataobjects.RatingDO;
 
+import java.io.Serializable;
+
 /**
  * Data Access Object for Ratings
  */
-public interface RatingsDAO {
+public interface RatingsDAO extends Serializable{
 
     /**
      * Method to persist a rating.

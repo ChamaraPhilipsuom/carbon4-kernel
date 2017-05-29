@@ -22,6 +22,7 @@ import org.wso2.carbon.user.core.claim.ClaimMapping;
 import org.wso2.carbon.user.core.profile.ProfileConfiguration;
 import org.wso2.carbon.user.core.profile.ProfileConfigurationManager;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -33,7 +34,7 @@ import java.util.Map;
  * add the class to the class path. Provide the class name in the configuration
  * file and the framework will pick the new realm code.
  */
-public interface UserRealm extends org.wso2.carbon.user.api.UserRealm {
+public interface UserRealm extends org.wso2.carbon.user.api.UserRealm, Serializable {
 
     /**
      * Initialize the realm. Used in tests.

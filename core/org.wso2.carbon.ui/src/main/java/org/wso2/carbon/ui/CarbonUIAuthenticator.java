@@ -19,6 +19,7 @@ package org.wso2.carbon.ui;
 
 import org.wso2.carbon.core.common.AuthenticationException;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -35,7 +36,7 @@ import javax.servlet.http.HttpServletRequest;
  * 
  * Priority is defined as higher the number higher the priority.
  */
-public interface CarbonUIAuthenticator {
+public interface CarbonUIAuthenticator extends Serializable{
 
     /**
      * This method will check whether given request can be handled by the authenticator. If

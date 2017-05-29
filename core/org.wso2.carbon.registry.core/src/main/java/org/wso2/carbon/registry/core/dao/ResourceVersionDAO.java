@@ -25,11 +25,12 @@ import org.wso2.carbon.registry.core.jdbc.dataobjects.ResourceDO;
 import org.wso2.carbon.registry.core.jdbc.utils.VersionRetriever;
 
 import java.io.InputStream;
+import java.io.Serializable;
 
 /**
  * Data Access Object for Resources when versioning for resources has been enabled.
  */
-public interface ResourceVersionDAO {
+public interface ResourceVersionDAO extends Serializable{
 
     /**
      * Get the identifiers of the snapshots created for a given path.

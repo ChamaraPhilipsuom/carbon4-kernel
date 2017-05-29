@@ -22,12 +22,13 @@ import org.wso2.carbon.registry.core.Tag;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.jdbc.dataobjects.TaggingDO;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Data Access Object for Tags
  */
-public interface TagsDAO {
+public interface TagsDAO extends Serializable{
 
     /**
      * Method to persist a tag.

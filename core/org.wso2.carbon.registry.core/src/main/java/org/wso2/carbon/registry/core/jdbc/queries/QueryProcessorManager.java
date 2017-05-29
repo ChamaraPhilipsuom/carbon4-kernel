@@ -27,6 +27,7 @@ import org.wso2.carbon.registry.core.dataaccess.QueryProcessor;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.user.core.UserRealm;
 
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
@@ -34,7 +35,7 @@ import java.util.Map;
 /**
  * The class is handling the query processing
  */
-public class QueryProcessorManager {
+public class QueryProcessorManager implements Serializable{
 
     private Map<String, QueryProcessor> queryProcessors = new HashMap<String, QueryProcessor>();
 

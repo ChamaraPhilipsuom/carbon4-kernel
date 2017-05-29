@@ -19,10 +19,12 @@ package org.wso2.carbon.registry.core.dao;
 import org.wso2.carbon.registry.core.Association;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
+
 /**
  * Data Access Object for Associations
  */
-public interface AssociationDAO {
+public interface AssociationDAO extends Serializable {
 
     /**
      * Method to persist an association.

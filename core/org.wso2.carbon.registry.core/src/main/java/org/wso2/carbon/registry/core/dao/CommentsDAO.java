@@ -22,10 +22,12 @@ import org.wso2.carbon.registry.core.ResourceImpl;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.jdbc.dataobjects.CommentDO;
 
+import java.io.Serializable;
+
 /**
  * Data Access Object for Comments
  */
-public interface CommentsDAO {
+public interface CommentsDAO extends Serializable{
 
     /**
      * Method to persist a comment.

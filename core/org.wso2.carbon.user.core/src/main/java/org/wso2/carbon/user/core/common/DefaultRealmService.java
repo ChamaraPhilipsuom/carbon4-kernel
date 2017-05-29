@@ -66,7 +66,7 @@ public class DefaultRealmService implements RealmService {
     //to track whether this is the first time initialization of the pack.
     private static boolean isFirstInitialization = true;
     private RealmCache realmCache = RealmCache.getInstance();
-    private BundleContext bc;
+    private transient BundleContext bc;
     private RealmConfiguration bootstrapRealmConfig;
     private TenantMgtConfiguration tenantMgtConfiguration;
     private DataSource dataSource;

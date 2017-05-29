@@ -20,11 +20,13 @@ package org.wso2.carbon.registry.core.dataaccess;
 
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 
+import java.io.Serializable;
+
 /**
  * This describes a an instance of the manager class that can be used to manage transactions on the
  * back-end database.
  */
-public interface TransactionManager {
+public interface TransactionManager extends Serializable{
 
     /**
      * Start a new transaction

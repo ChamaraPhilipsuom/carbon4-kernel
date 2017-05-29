@@ -20,12 +20,14 @@ package org.wso2.carbon.registry.core.dataaccess;
 
 import org.wso2.carbon.registry.core.jdbc.utils.Transaction;
 
+import java.io.Serializable;
+
 /**
  * This class represents a database transaction, which is used to support consistency and
  * concurrency. A database transaction is utilized by the {@link Transaction} API, to provide
  * database access to the registry.
  */
-public interface DatabaseTransaction {
+public interface DatabaseTransaction extends Serializable{
 
     /**
      * Push current transaction to a stack and make room for a new one.

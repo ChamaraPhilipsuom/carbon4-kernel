@@ -21,13 +21,14 @@ import org.wso2.carbon.registry.core.dataaccess.DataAccessManager;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.utils.LogRecord;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Data Access Object for Activity Logs.
  */
-public interface LogsDAO {
+public interface LogsDAO extends Serializable{
 
     /**
      * Save batch of log records

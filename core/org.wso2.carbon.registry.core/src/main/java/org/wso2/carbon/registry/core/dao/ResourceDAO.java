@@ -24,12 +24,13 @@ import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.jdbc.dataobjects.ResourceDO;
 
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * The data access object for resources.
  */
-public interface ResourceDAO {
+public interface ResourceDAO extends Serializable{
 
     /**
      * Returns the resource ID (RID) of the resource referred by the given path. NOTE: This doesn't

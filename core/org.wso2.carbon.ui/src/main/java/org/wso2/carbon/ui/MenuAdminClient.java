@@ -27,9 +27,10 @@ import org.wso2.carbon.ui.deployment.beans.Menu;
 import org.wso2.carbon.utils.ServerConstants;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.Serializable;
 import java.util.*;
 
-public class MenuAdminClient {
+public class MenuAdminClient implements Serializable {
     private static Log log = LogFactory.getLog(MenuAdminClient.class);
     private Menu[] menus;
     private StringBuffer menuContent;
